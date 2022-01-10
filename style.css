@@ -1,0 +1,52 @@
+
+body {
+  background-color: #242F3F;
+  text-align:center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main,.main-cont{
+  width: 160px;
+  height: 160px;
+  animation: mainspin 5s infinite linear;
+}
+
+
+.loader {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top:-8px;
+  left:-67px;
+  position: relative;
+  border: 4px solid white;
+  background-color:white;
+  transform:all 2s infinite linear;
+  animation: loader 3s infinite linear;
+}
+.loader2{
+display: inline-block;
+  width: 10px;
+  height: 10px;
+  top:150px;
+  left:67px;
+  position: relative;
+  border: 4px solid white;
+  background-color:white;
+  transform:all 2s infinite linear;
+  animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mainspin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
